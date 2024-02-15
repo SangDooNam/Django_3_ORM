@@ -139,6 +139,7 @@ class Task1(TestCase):
         fields = [field.name for field in self.song._meta.get_fields()]
         self.assertNotIn("author_website", fields)
 
+
     def test_foreign_keys(self):
         """Test the foreign keys."""
         fields = [
